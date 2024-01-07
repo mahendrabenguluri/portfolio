@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahendra's Portfolio</title>
+    <link rel="icon" href="img" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        /* Custom CSS for the Scroll to Top button */
+        .scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          display: none;
+          z-index: 1000;
+        }
+        #para{
+            text-indent: 100px;
+            text-align: justify;
+        }
+        .nav-link{
+          text-transform: uppercase;
+        }
+        .vertical{
+          border-left: 3px solid white;
+          height: 1px;
+        }
+        .text-yellow{
+          color: yellow;
+        }
+        .text-orange{
+          color: orange;
+        }
+        .text-aqua{
+          color: aqua;
+        }
+        .text-lightred{
+          color: rgb(239, 110, 110);
+        }
+        .text-red{
+          color: red;
+        }
+        .text-lightblue{
+          color: rgb(100, 100, 213);
+        }
+        .card-text{
+          text-align: justify;
+        }
+        .navbar
+        {
+          background-color: #089da1;
+        }
+        .text-d
+        {
+          color: lightcoral;
+          font-size: 60px;
+        }
+      </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md text-center border rounded sticky- " id="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <span class="fw-bold text-secondary text-white"> <img src="img/Mahendra-icon.png" width="120px" height="40px" alt=""> Mahendra's Portfolio</span>
+            </a>
+
+            <!-- Toggler button -->
+            <button class="navbar-toggler shadow-none border-1" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav" aria-controls="mainnav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- adding toggle button -->
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-end align-center " id="mainnav">
+                <ul class="navbar-nav gap-1 ">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link text-white "><i class="bi bi-house-fill"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link text-white"><i class="bi bi-file-person-fill"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link text-white"><i class="bi bi-list-stars"></i> Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link text-white"><i class="bi bi-alt"></i> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link text-white"><i class="bi bi-person-rolodex"></i> Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="bg-dark text-white">
+        <div class="container-lg">
+            <div class="row justify-content-start ">
+                <div class="col-md-6 align-center py-5 my-5 text-center text-md-start" id="home-left">
+                    <h1>
+                        <div class="display-2 pt-4" >Hello Welcome to</div>
+                        <div class="display-5" ><span class="text-d">Mahendra's</span> Portfolio</div>
+                    </h1>
+                    <a href="#" class="btn btn-lg btn-info text-white mb-4" > Let's chat <i class="bi bi-chat-dots"></i></a> <br>
+
+                    <!-- offcanvas -->
+                    
+                </div>
+                <div class="col-md-5 align-center d-none d-md-block py-5 my-5 ms-5" id="home-right">
+                    <img src="img/mahi-1.jpg" class="img-fluid rounded-5" alt="mahi's image" style="height: 450px;" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-6 col-sm-3" id="about-left">
+                    <img src="img/mahi.jpeg" class="img-fluid my-lg-5 py-lg-5 mt-3 rounded-5 bg-dark"  alt="mahi image" >
+                </div>
+                <div class="col-lg-7 col-sm-4 my-lg-5 pt-5 pb-2" id="about-right">
+                    <h2 class="pb-3 text-danger text-uppercase" > <i class="bi bi-person-lines-fill text-altlight"></i> About me</h2>
+                    <hr class="border border-2">
+                    <p class="lead text-altgreen pt-1 pb-3 mb-2" id="para">Recent graduate with a degree in B.Tech(ECE). A quick learner with a strong foundation in Html, Css, Boostrap, Jabvascript, Sql, Java, Python . Eager to contribute to a dynamic team and apply academic knowledge to real-world challenges. Adept at collaborating in a team environment and committed to continuous learning and professional growth.</p>
+                    <button class="btn btn-info mb-5 text-white" id="btn">Download Resume <i class="bi bi-download"></i> </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="bg-dark pt-5">
+        <div class="container-lg py-5 justify-content-between-sm" >
+            <h2 class="text-center text-yellow pb-1 text-uppercase" id="tech">
+               <i class="bi bi-android "></i> Technical Skills
+            </h2>
+          <hr class="border border-2">
+            <div class="row justify-content-center gap-4 pt-3">
+                <div class="card bg-dark text-white" style="width: 19rem;" id="card">
+                    <img src="img/python.png" alt="java" class="img-fluid" style="height: 160px; border-radius: 5px; margin-top: 9px;">
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-success ">Python Programming</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">Python</h6>
+                        <p class="card-text">Python is a high-level, general-purpose programming language known for its simplicity, readability, and versatility. It was created by Guido van Rossum and first released in 1991.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 19rem;" id="card">
+                    <img src="img/java.jpg" alt="java" class="img-fluid" style="height: 160px; border-radius: 5px; margin-top: 9px;">
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-success">Java Programming</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">Core Java</h6>
+                        <p class="card-text">Java is a high-level, object-oriented programming language developed by Sun Microsystems (now owned by Oracle Corporation). It was designed to be platform-independent, allowing developers to write code that can run on any device that has the Java Virtual Machine (JVM) installed.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 19rem;" id="card">
+                    <img src="img/sql.webp" alt="java" class="img-fluid" style="height: 160px; border-radius: 5px; margin-top: 9px;">
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-success">SQL</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">Structured Query Language</h6>
+                        <p class="card-text">Structured Query Language(SQL) is a domain-specific language used for managing and manipulating relational databases. It provides a standardized way for developers and database administrators to interact with and manage databases.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 19rem;" id="card">
+                    <img src="img/dsa.jpg" alt="java" class="img-fluid" style="height: 160px; border-radius: 5px; margin-top: 9px;">
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-success">DSA</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">Data Structures and Algorithm</h6>
+                        <p class="card-text">DSA stands for Data Structures and Algorithms. It is a fundamental concept in computer science that deals with organizing and processing data efficiently.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 19rem;" id="card">
+                    <img src="img/HTML.jpg" alt="java" class="img-fluid" style="height: 160px; border-radius: 5px; margin-top: 9px;">
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-success">HTML</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">HyperText Markup Language</h6>
+                        <p class="card-text">HyperText Markup Language(HTML) is the standard language for creating and designing web pages.HTML is a markup language that structures the content on the web. It uses a system of tags to define elements and their attributes.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 19rem;" id="card">
+                    <img src="img/CSS.jpg" alt="java" class="img-fluid" style="height: 160px; border-radius: 5px; margin-top: 9px;">
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-success">CSS</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">Cascading Style Sheets</h6>
+                        <p class="card-text">Cascading Style Sheets(CSS) is a style sheet language used for describing the presentation of a document written in HTML or XML. It defines how elements should be displayed on a web page, including their layout, colors, fonts, spacing, and more.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 19rem;" id="card">
+                    <img src="img/JS.jpg" alt="java" class="img-fluid" style="height: 160px; border-radius: 5px; margin-top: 9px;">
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-success">JS</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">JavaScript</h6>
+                        <p class="card-text">JavaScript is a high-level, interpreted programming language primarily known for its role in web development. It is a versatile language that allows developers to add dynamic behavior, interactivity, and client-side scripting to web pages.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white" style="width: 19rem;" id="card">
+                    <img src="img/Boostrap.jpg" alt="java" class="img-fluid" style="height: 160px; border-radius: 5px; margin-top: 9px;">
+                    <div class="card-body text-center py-2">
+                        <h5 class="card-title text-success">Bootstrap</h5>
+                        <h6 class="card-subtitle text-altgreen pb-3">CSS Framework</h6>
+                        <p class="card-text">Bootstrap is a popular open-source front-end framework that provides a collection of tools, styles, and pre-designed components to simplify and accelerate the process of building responsive and visually appealing web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates section -->
+    <section id="certificate" class="bg-dark text-white py-5">
+        <div class="container-lg ">
+            <h2 class="text-center pt-5 pb-1 text-orange text-uppercase" id="certified"> <i class="bi bi-award-fill"></i> Certifications</h2>
+            <hr class="border border-2">
+            <div class="row justify-content-evenly pb-5">
+                <!-- <div class="col-lg-5 pt-5 ">
+                    <img src="/images/certificate.jpg" alt="certificate image">
+                </div> -->
+                <div class="col-lg-5  pb-5 pt-4">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item bg-success" id="accor1">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Java Certification
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body bg-dark text-white">
+                                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consequuntur maiores id eius et blanditiis dicta provident est. Quod, nesciunt?</p>
+                                <a href="#" class="btn btn-success">View Certificate <i class="bi bi-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item" id="accor2">
+                            <h2 class="accordion-header " id="headingTwo">
+                              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Python Certification
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body bg-dark text-white">
+                                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quam sapiente vel deleniti quisquam perferendis ab accusantium esse illum illo.</p>
+                                <a href="#" class="btn btn-success">View Certificate <i class="bi bi-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item" id="accor3">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseTwo">
+                                HackerRank Certifications
+                              </button>
+                            </h2>
+                            <div id="collapsethree" class="accordion-collapse collapse fw-bold" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body bg-dark text-white">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facilis sit omnis libero consequatur ipsum aut nulla ex veniam laboriosam?</p>
+                                <a href="#" class="btn btn-success">View Certificates <i class="bi bi-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item" id="accor">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseTwo">
+                                Microsoft Certified Azure Fundamentals Certifications
+                              </button>
+                            </h2>
+                            <div id="collapsethree" class="accordion-collapse collapse fw-bold" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body bg-dark text-white">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facilis sit omnis libero consequatur ipsum aut nulla ex veniam laboriosam?</p>
+                                <a href="#" class="btn btn-success">View Certificates <i class="bi bi-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item" id="accor5">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Communication[English] Certification
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body bg-dark text-white">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur, eius sint voluptas aspernatur ad delectus voluptatum corporis blanditiis? Voluptatibus!</p>
+                                <a href="#" class="btn btn-success">View Certificate <i class="bi bi-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="bg-dark text-white py-5">
+      <div class="container-lg">
+        <h2 class="text-center text-aqua pb-1 text-uppercase" id="project"><i class="bi bi-stars"></i> Projects</h2>
+        <hr>
+        <div class="row justify-content-evenly gap-4 pt-3">
+          <div class="card bg-dark text-white" style="width: 19rem;" id="card">
+            <img src="img/book.jpg" alt="Book image" class="img-fluid" style="height: 160px; border-radius: 5px; margin-top: 9px;">
+            <div class="card-body">
+              <h5 class="card-title text-center text-yellow text-uppercase">Book store</h5>
+              <h5 class="card-subtitle text-center text-info">Website</h5>
+              <p class="lead card-text">Designing a book store website involves creating an interface that is user-friendly, visually appealing, and encourages visitors to explore and purchase books. Below are key elements and details you might consider for a book store website.</p>
+              <a href="" class="btn btn-success">View site <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card bg-dark text-white" style="width: 19rem;" id="card">
+            <img src="img/youtube.webp" alt="Book image" class="img-fluid" style="height: 160px; border-radius: 5px; margin-top: 9px;">
+            <div class="card-body">
+              <h5 class="card-title text-center text-yellow text-uppercase">YouTube Web Page</h5>
+              <h5 class="card-subtitle text-center text-info">Website</h5>
+              <p class="lead card-text">Designing a YouTube web page involves creating an interface that is user-friendly, visually appealing, and functional. Below are key elements and details you might consider for a YouTube web page.</p>
+              <a href="" class="btn btn-success">View site <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card bg-dark text-white" style="width: 19rem;" id="card">
+            <img src="img/portfolio.jpg" alt="Book image" class="img-fluid" style="height: 160px; border-radius: 5px; margin-top: 9px;">
+            <div class="card-body">
+              <h5 class="card-title text-center text-yellow text-uppercase">Personal Portfolio</h5>
+              <h5 class="card-subtitle text-center text-info">Website</h5>
+              <p class="lead card-text">Creating a portfolio website is a great way to showcase your work, skills, and experience to potential employers or clients. Here are the key details you might want to include in your portfolio website.</p>
+              <a href="" class="btn btn-success">View site <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card bg-dark text-white" style="width: 19rem;" id="card">
+            <img src="img/project.jpg" alt="Book image" class="img-fluid" style="height: 160px; border-radius: 5px; margin-top: 9px;">
+            <div class="card-body">
+              <h5 class="card-title text-center text-yellow text-uppercase">TRAFFIC PREDICTION FOR INTELLIGENT TRANSPORTATION USING IMAGE PROCESSING</h5>
+              <h5 class="card-subtitle text-center text-info">College Project</h5>
+              <p class="lead card-text">Predicting traffic for intelligent transportation systems (ITS) using image processing involves leveraging computer vision techniques to analyze images or video feeds from traffic cameras or other sensors. Here is an outline of the steps you might take to implement a traffic prediction system using image processing.</p>
+              <a href="" class="btn btn-success">View site <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section -->
+    <section id="contact" class="bg-dark text-white pb-5 pt-3">
+      <div class="container-md ">
+        <div class="text-center">
+          <h2 class="fw-bold text-warning text-uppercase" id="phone"><i class="bi bi-person-rolodex"></i> Contact</h2>
+          <p class="lead text-info" id="queries">For any quries contact me</p>
+        </div>
+        <hr>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <label for="email" class="form-label mt-4 text-yellow" id="right">Enter your Email</label>
+              <div class="input-group" id="left">
+                <span class="input-group-text">
+                  <i class="bi bi-envelope-plus-fill"></i>
+                </span>
+                <input type="email" class="form-control" placeholder="e.g.mahi999@gmail.com">
+                <span class="input-group-text">
+                  <i class="bi bi-question-circle"></i>
+                </span>
+              </div>
+
+              <label for="name" class="form-label mt-4 text-yellow" id="right">Enter your Name</label>
+              <div class="input-group" id="left">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input type="name" class="form-control" placeholder="Benguluri Mahendra">
+                <span class="input-group-text">
+                  <i class="bi bi-question-circle"></i>
+                </span>
+              </div>
+
+              <!-- inputgroup and selectors -->
+              <label for="query" class="form-label mt-4 text-yellow" id="right">Common queries</label>
+              <div class="input-group" id="left">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-dots-fill"></i>
+                </span>
+                <select name="" id="query" class="form-select">
+                  <option value="site issues">. . . . . . . .</option>
+                  <option value="site issues">Site Issues</option>
+                  <option value="image issues">Image Issues</option>
+                  <option value="other issues">Other Issues</option>
+                </select>
+              </div>
+
+              <!-- Floating form -->
+              <div class="form-floating mt-5" id="left">
+                <textarea name="text" id="q" class="form-control" style="height: 140px;"></textarea>
+                <label for="q"> your queries...</label>
+              </div>
+
+              <!-- submit button -->
+              <div class="text-center" id="btn">
+                <button class="btn btn-success my-4" type="button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="bg-black ">
+      <div class="d-flex justify-content-center pt-4" id="icons">
+        <div class="p-2"><a href="#" class="text-decoration-none text-blue"><i class="bi bi-facebook "></i></a></div>
+        <div class="p-2"><a href="#" class="text-decoration-none " ><i class="bi bi-whatsapp text-success"></i></a></div>
+        <div class="p-2"><a href="#" class="text-decoration-none " ><i class="bi bi-instagram text-lightred"></i></a></div>
+        <div class="p-2"><a href="#" class="text-decoration-none " ><i class="bi bi-twitter-x text-white"></i></a></div>
+        <div class="p-2"><a href="#" class="text-decoration-none " ><i class="bi bi-linkedin text-lightblue"></i></a></div>
+        <div class="p-2"><a href="#" class="text-decoration-none " ><i class="bi bi-youtube text-red"></i></a></div>
+        <div class="p-2"><a href="#" class="text-decoration-none " ><i class="bi bi-threads text-white"></i></a></div>
+      </div>
+      <div class="container text-center">
+        <h5 id="left" class="pt-2 pb-3 text-white">&copy; All rights reserved &nbsp;<span class="vertical" id="right"> &nbsp; </span>Thanks for visiting!</h5>
+      </div>  
+    </section>
+
+    <!-- Scroll to Top Button -->
+  <button class="btn btn-success scroll-to-top bg-opacity-10" id="btnScrollToTop">
+    <i class="bi bi-arrow-up border-0 rounded-pill"></i>
+  </button>
+
+  <!-- Include Bootstrap JS and jQuery (optional) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Show or hide the button based on scroll position
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('.scroll-to-top').fadeIn();
+        } else {
+          $('.scroll-to-top').fadeOut();
+        }
+      });
+
+      // Scroll to the top when the button is clicked
+      $('#btnScrollToTop').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 0); // 800 milliseconds for the animation
+        return false;
+      });
+    });
+  </script>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+  <!-- Script link for scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('#navbar',{
+      duration : 2000,
+      origin : 'bottom',
+      <!-- distance : '120px' -->
+    })
+    sr.reveal('#home-left',{
+      duration : 2000,
+      origin : 'top',
+      distance : '100px',
+    })
+    sr.reveal('#home-right',{
+      duration : 2000,
+      origin : 'top',
+      distance : '100px',
+    })
+    sr.reveal('#about-left',{
+      duration : 2000,
+      origin : 'top',
+      distance : '150px',
+      viewFactor : 0.2
+    })
+    sr.reveal('#about-right',{
+      duration : 2000,
+      origin : 'top',
+      distance : '150px',
+      viewFactor : 0.3
+    })
+    sr.reveal('#tech',{
+      duration : 2000,
+      origin : 'top',
+      distance : '100px',
+      viewFactor : 0.3
+    })
+    sr.reveal('#card',{
+      duration : 2000,
+      origin : 'bottom',
+      distance : '150px',
+      viewFactor : 0.3
+    })
+    sr.reveal('#certified',{
+      duration : 2000,
+      origin : 'top',
+      distance : '120px',
+      viewFactor : 0.3
+    })
+    sr.reveal(('#accor1'),{
+      duration : 2000,
+      origin : 'top',
+      distance : '30px',
+      viewFactor : 0.2
+    })
+    sr.reveal(('#accor2'),{
+      duration : 2000,
+      origin : 'top',
+      distance : '120px',
+      viewFactor : 0.2
+    })
+    sr.reveal('#accor3',{
+      duration : 2000,
+      origin : 'top',
+      distance : '160px',
+      viewFactor : 0.2
+    })
+    sr.reveal('#accor4',{
+      duration : 2000,
+      origin : 'top',
+      distance : '230px',
+      viewFactor : 0.2
+    })
+    sr.reveal('#project',{
+      duration : 2000,
+      origin : 'left',
+      distance : '120px',
+      viewFactor : 0.3
+    })
+    sr.reveal('#phone',{
+      duration : 2000,
+      origin : 'top',
+      distance : '100px',
+      viewFactor : 0.2
+    })
+    sr.reveal('#queries',{
+      duration : 2000,
+      origin : 'left',
+      distance : '120px',
+      viewFactor : 0.3
+    })
+    sr.reveal('#left',{
+      duration : 2000,
+      origin : 'left',
+      distance : '120px',
+      viewFactor : 0.2
+    })
+    sr.reveal('#right',{
+      duration : 2000,
+      origin : 'right',
+      distance : '120px',
+      viewFactor : 0.3
+    })
+    sr.reveal('#btn',{
+      duration : 2000,
+      origin : 'top',
+      distance : '120px',
+      viewFactor : 0.3
+    })
+    sr.reveal('#other',{
+      duration : 2000,
+      origin : 'left',
+      distance : '50px'
+    })
+    sr.reveal('#icons',{
+      duration : 2000,
+      origin : 'bottom',
+      distance : '100px',
+      visualViewport : 0.2
+    })
+  </script>
+
+</body>
+</html>
